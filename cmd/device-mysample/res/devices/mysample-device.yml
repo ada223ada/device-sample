@@ -1,0 +1,17 @@
+deviceList:
+  - name: MySample-Device01
+    profileName: MySample-Device
+    description: Example of MySample Device
+    labels:
+      - industrial
+    protocols:
+      other:
+        Address: mysample01
+        Port: 300
+    autoEvents:
+      - interval: 10s
+        onChange: false
+        sourceName: Switch
+      - interval: 30s
+        onChange: false
+        sourceName: Image

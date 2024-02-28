@@ -1,0 +1,33 @@
+{
+   "name":"MySample-Provision-Watcher",
+   "serviceName":"device-mysample",
+   "labels":[
+      "mysample"
+   ],
+   "identifiers":{
+      "Address":"mysample[0-9]+",
+      "Port":"3[0-9]{2}"
+   },
+   "blockingIdentifiers":{
+      "Port":[
+         "397",
+         "398",
+         "399"
+      ]
+   },
+   "adminState": "UNLOCKED",
+   "discoveredDevice":{
+      "profileName":"MySample-Device",
+      "adminState":"UNLOCKED",
+      "autoEvents":[
+         {
+            "interval":"15s",
+            "sourceName":"SwitchButton"
+         }
+      ],
+      "Properties":{
+         "testPropertyA":"weather",
+         "testPropertyB":"meter"
+      }
+   }
+}
